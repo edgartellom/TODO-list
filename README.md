@@ -16,13 +16,14 @@
 <li>DB_HOST=localhost</li>
 <li>DB_NAME=todo_app</li>
 <li>PORT=3001</li>
-<li>DB_DEPLOY=</li>
+<li>DB_DEPLOY=postgres://postgres:gE323dEfC5+aC6*e*-6*4Gd3CGa5Ggaa@viaduct.proxy.rlwy.net:52714/railway</li>
+<p>If you want to work in local environment, delete DB_DEPLOY value</p>
 </ul>
 <hr/>
 
 <ul><h3>Create .env file in client folder & add variables as following : </h3>
 <h4>Ask for empty variables to us! </h4>
-<li>VITE_REACT_APP_URL_BACKEND=</li>
+<li>VITE_REACT_APP_URL_BACKEND=todo-list-production-6629.up.railway.app</li>
 </ul>
 <hr/>
 

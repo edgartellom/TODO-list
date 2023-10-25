@@ -176,18 +176,18 @@ const TodoItem = ({ data }) => {
           </div>
         </div>
         {isEditing && (
-          <div class="md:flex md:items-center">
-            <div class="md:w-1/3"></div>
-            <div class="md:w-2/3">
+          <div className="md:flex md:items-center">
+            <div className="md:w-1/3"></div>
+            <div className="md:w-2/3">
               <button
-                class="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 mt-5 rounded"
+                className="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 mt-5 rounded"
                 type="button"
                 onClick={handleSaveClick}
               >
                 Save
               </button>
               <button
-                class="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 mt-5 rounded"
+                className="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 mt-5 rounded"
                 type="button"
                 onClick={handleCancelClick}
               >
