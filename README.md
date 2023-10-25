@@ -11,19 +11,19 @@
 
 <ul><h3>Create .env file in api folder & add variables as following : </h3>
 <h4>Ask for empty variables to us! </h4>
-<li>DB_USER=postgres</li>
+<li>DB_USER=[YOUR_DB_USER]</li>
 <li>DB_PASSWORD=[YOUR_DB_PASSWORD]</li>
 <li>DB_HOST=localhost</li>
 <li>DB_NAME=todo_app</li>
 <li>PORT=3001</li>
-<li>DB_DEPLOY=postgres://postgres:gE323dEfC5+aC6*e*-6*4Gd3CGa5Ggaa@viaduct.proxy.rlwy.net:52714/railway</li>
+<li>DB_DEPLOY=[ASK ME if need it]</li>
 <p>If you want to work in local environment, delete DB_DEPLOY value</p>
 </ul>
 <hr/>
 
 <ul><h3>Create .env file in client folder & add variables as following : </h3>
 <h4>Ask for empty variables to us! </h4>
-<li>VITE_REACT_APP_URL_BACKEND=https://todo-list-production-6629.up.railway.app/</li>
+<li>VITE_REACT_APP_URL_BACKEND=[ASK ME if need it]</li>
 </ul>
 <hr/>
 
