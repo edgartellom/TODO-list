@@ -9,10 +9,10 @@ async function getTODOs(req, res) {
       if (categories === "All") {
         filterOptions = {};
       } else {
-        const categories = categories.split(",");
+        const categoryNames = categories.split(",");
         const categoryIdsArray = await Promise.all(
-          categories.map((categoryName) => {
-            const category = Category.findOne({
+          categoryNames.map(async (categoryName) => {
+            const category = await Category.findOne({
               where: { name: { [Op.iLike]: categoryName } },
             });
             return category ? category.id : null;
@@ -30,6 +30,7 @@ async function getTODOs(req, res) {
       limit: limit,
       offset: (page - 1) * limit,
       where: filterOptions,
+      order: [["id", "ASC"]],
       include: {
         model: Category,
         attributes: ["name"],

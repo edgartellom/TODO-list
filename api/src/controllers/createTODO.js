@@ -5,12 +5,10 @@ async function createTODO(req, res) {
   const t = await conn.transaction();
 
   try {
-    const newCategory = await Category.create(
-      {
-        name: category,
-      },
-      { transaction: t }
-    );
+    const [newCategory, created] = await Category.findOrCreate({
+      where: { name: category },
+      transaction: t,
+    });
 
     const newTodo = await Todo.create(
       {
