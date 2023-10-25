@@ -23,7 +23,7 @@
 
 <ul><h3>Create .env file in client folder & add variables as following : </h3>
 <h4>Ask for empty variables to us! </h4>
-<li>VITE_REACT_APP_URL_BACKEND=todo-list-production-6629.up.railway.app</li>
+<li>VITE_REACT_APP_URL_BACKEND=https://todo-list-production-6629.up.railway.app/</li>
 </ul>
 <hr/>
 
